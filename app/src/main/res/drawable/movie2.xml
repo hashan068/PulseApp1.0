@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/movie_selector.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Default state -->
+    <item android:drawable="@drawable/image_the_creater_03" />
+
+</selector>

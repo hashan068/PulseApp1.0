@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PulseApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Movies">Movies</string>
+    <string name="Bookings">Bookings</string>
+    <string name="Profile">Profile</string>
+</resources>
