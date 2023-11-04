@@ -1,4 +1,4 @@
-package com.example.pulseapp.ui.home;
+package com.example.pulseapp.ui.bookings;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.pulseapp.databinding.FragmentHomeBinding;
+import com.example.pulseapp.databinding.FragmentDashboardBinding;
 
-public class HomeFragment extends Fragment {
+public class BookingsFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+    private FragmentDashboardBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        BookingsViewModel bookingsViewModel =
+                new ViewModelProvider(this).get(BookingsViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textDashboard;
+        bookingsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
