@@ -3,22 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_movies">
+    app:startDestination="@id/navigation_movies">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_movies"
         android:name="com.example.pulseapp.ui.movies.MoviesFragment"
         android:label="@string/Movies"
         tools:layout="@layout/fragment_movies" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_bookings"
         android:name="com.example.pulseapp.ui.bookings.BookingsFragment"
         android:label="@string/Bookings"
         tools:layout="@layout/fragment_bookings" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_profile"
         android:name="com.example.pulseapp.ui.profile.ProfileFragment"
         android:label="@string/Profile"
         tools:layout="@layout/fragment_profile" />
