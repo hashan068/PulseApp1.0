@@ -10,21 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.pulseapp.databinding.FragmentHomeBinding;
+import com.example.pulseapp.databinding.FragmentMoviesBinding;
 
 public class MoviesFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+    private FragmentMoviesBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         MoviesViewModel moviesViewModel =
                 new ViewModelProvider(this).get(MoviesViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentMoviesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
+        final TextView textView = binding.textMovies;
         moviesViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
